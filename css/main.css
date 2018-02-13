@@ -14,10 +14,11 @@ h6 {
 
 body {
   background-color: #fff;
+  min-height: 100vh;
 }
 
 .main-container {
-  min-height: 100vh;
+  
   background-image: url('/images/logo_large_temp.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
