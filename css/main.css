@@ -18,13 +18,22 @@ body {
 
 .main-container {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url('/images/logo_large_temp.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 450px;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    background-size: 350px;
+  }
 }
 
 
-.distance-box {
+
+.footer-box {
   height: 70px;
   text-align: center;
   position: absolute;
