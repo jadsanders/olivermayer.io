@@ -1,3 +1,8 @@
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
 h3, h4 {
   font-family: 'Montserrat', sans-serif;
   color: #273040;
@@ -12,9 +17,12 @@ h6 {
   font-size: 14px;
 }
 
-body {
-  background-color: #fff;
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
+
 
 .main-container {
   height: 100vh;
@@ -30,6 +38,7 @@ body {
     background-size: 350px;
   }
 }
+
 
 
 
@@ -62,3 +71,141 @@ body {
   height: 50px;
   display: inline-block;
 }
+
+
+.custom-nav {
+  height: 150px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0px 10px 0px 0px;
+  /*background-color: lightgray;*/
+  transition: all 0.3s;
+}
+
+.custom-nav-small {
+  height: 80px;
+  background-color: #fff;
+}
+
+
+.custom-brand {
+  height: 150px;
+  width: 150px;
+  float: left;
+  padding: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background-color: red;*/
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.custom-brand-small {
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+}
+
+
+
+/*Change navbar appearance on small-medium screens */
+
+  @media only screen and (max-width: 992px) {
+    .custom-brand,
+    .custom-brand-small {
+      width: 100%;
+    }
+    
+    .custom-nav {
+      padding: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .custom-nav-link,
+    .custom-nav-link-small {
+      display: none;
+    }
+  }
+
+
+
+
+.custom-nav-link {
+  height: 150px;
+  padding: 62px 20px 0px 20px;
+  float: right;
+  transition: all 0.3s;
+}
+
+.custom-nav-link-small {
+  height: 80px;
+  padding: 30px 20px 0px 20px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+.site-header {
+  height: 800px;
+  background-image: url('/images/header.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.carousel-container {
+  padding: 0px 80px 0px 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-container {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+
+.carousel-item {
+  height: 500px;
+}
+
+.image-box {
+  height: 500px;
+  width: 50%;
+  float: left;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+.text-box {
+  height: 500px;
+  width: 50%;
+  float: left;
+  background-color: grey;
+  padding: 50px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .image-box {
+    width: 100%;
+  }
+  
+  .text-box {
+    display: none;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: green;
+  width: 50px;
+}
+
