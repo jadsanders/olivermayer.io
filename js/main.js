@@ -25,7 +25,6 @@ $('.carousel').carousel({
 });
 
 
-
 $("#projects-link").click(function() {
     $('html, body').animate({
     scrollTop: $("#projects-section").offset().top
